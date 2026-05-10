@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+
+    <h1>Me envie um e-mail</h1>
+
+    <form id="formContato">
+        
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Seu e-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <p id="status"></p>
+
+    <footer>
+        <p><a href="index.html">Voltar para a página principal</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
