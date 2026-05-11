@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Minha página pessoal e blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog do Roger 2 - Tecnologia e acessibilidade</title>
 </head>
 
-<body>
+<body id="topo">
 
-```
+<a href="#conteudo">Pular para o conteúdo principal</a>
+
 <header>
-    <h1>Bem vindo ao meu site!</h1>
-    <p>Aqui você pode obter algumas informações sobre mim, e poderá ler alguns artigos que posto por aqui, tratando de acessibilidade, sistemas operacionais e de tudo um pouco.</p>
+    <h1>Bem-vindo ao meu site!</h1>
+
+    <p>
+        Aqui você encontra informações sobre mim e artigos sobre acessibilidade,
+        sistemas operacionais e tecnologia.
+    </p>
 </header>
-<nav>
-  <a href="index.html">Início</a>
-  <a href="sobre.html">Sobre mim</a>
-  <a href="formacao.html">Minha formação</a>
-  <a href="curriculo.html">Meu currículo</a>
-  <a href="criacao.html">Porque criei esse site?</a>
+
+<nav aria-label="Navegação principal">
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre mim</a></li>
+    <li><a href="formacao.html">Minha formação</a></li>
+    <li><a href="curriculo.html">Meu currículo</a></li>
+    <li><a href="artigos/">Artigos</a></li>
+  </ul>
 </nav>
 
-<main>
+<main id="conteudo">
 
     <section>
-<h2><a href="artigos/">Artigos</a></h2>
+        <h2>Artigos</h2>
+        <p><a href="artigos/">Ver todos os artigos</a></p>
     </section>
+
+</main>
 
 <footer>
     <p>© 2026 - Roger Ilan</p>
+    <p><a href="contato.html">Fale comigo</a></p>
+    <p><a href="#topo">Voltar ao topo</a></p>
 </footer>
-```
 
 </body>
 </html>
-
