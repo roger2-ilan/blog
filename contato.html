@@ -1,35 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
 </head>
-<body>
 
-    <h1>Me envie um e-mail</h1>
+<body id="topo">
 
-    <form id="formContato">
-        
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <a href="#conteudo">
+        Pular para o conteúdo principal
+    </a>
 
-        <label for="email">Seu e-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+    <header>
 
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+        <h1>Fale comigo</h1>
 
-        <button type="submit">Enviar</button>
+        <p>
+Você pode me enviar uma mensagem através do fomulário abaixo.
+       </p>
 
-    </form>
+    </header>
 
-    <p id="status"></p>
+    <nav aria-label="Menu principal">
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Minha formação</a></li>
+            <li><a href="curriculo.html">Meu currículo</a></li>
+            <li><a href="artigos/">Artigos</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <main id="conteudo">
+
+        <section>
+
+            <h2>Formulário de contato</h2>
+
+            <p>
+Atenção! é apenas uma simulação! O e-mail não vai ser enviado de verdade.
+            </p>
+
+            <form id="formContato">
+
+                <p>
+                    <label for="nome">Nome:</label><br>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        autocomplete="name"
+                        required>
+                </p>
+
+                <p>
+                    <label for="email">Seu e-mail:</label><br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="6"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </p>
+
+            </form>
+
+            <p id="status" aria-live="polite"></p>
+
+        </section>
+
+    </main>
 
     <footer>
-        <p><a href="index.html">Voltar para a página principal</a></p>
+
+        <p>© 2026 - Roger Ilan</p>
+
+        <p>
+            <a href="#topo">
+                Voltar ao topo
+            </a>
+        </p>
+
     </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
