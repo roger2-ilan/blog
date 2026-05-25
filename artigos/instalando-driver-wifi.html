@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instalando o driver RTL8192EU no Arch Linux</title>
+</head>
+
+<body id="topo">
+
+    <a href="#conteudo">
+        Pular para o conteúdo principal
+    </a>
+
+    <header>
+        <h1>Instalando o driver RTL8192EU no Arch Linux</h1>
+
+        <p>
+            Aprenda a instalar o driver RTL8192EU via DKMS no Arch Linux.
+        </p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../sobre.html">Sobre mim</a></li>
+            <li><a href="../formacao.html">Minha formação</a></li>
+            <li><a href="../curriculo.html">Meu currículo</a></li>
+            <li><a href="../index.html#artigos">Artigos</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main id="conteudo">
+
+        <article>
+
+            <section>
+                <p>
+                    O driver RTL8192EU é utilizado por diversos adaptadores
+                    Wi-Fi USB baseados no chipset Realtek RTL8192EU, como:
+                </p>
+
+                <ul>
+                    <li>D-Link DWA-131 Rev E</li>
+                    <li>TP-Link TL-WN821N V6</li>
+                    <li>Rosewill RNX-N180UBE v2</li>
+                </ul>
+
+                <p>
+                    Em algumas versões do kernel Linux, o driver padrão
+                    <code>rtl8xxxu</code> pode apresentar problemas de
+                    compatibilidade, desconexões ou até mesmo não reconhecer
+                    corretamente o adaptador.
+                </p>
+
+                <p>
+                    Neste tutorial veremos como instalar o driver alternativo
+                    via DKMS no Arch Linux.
+                </p>
+            </section>
+
+            <section>
+                <h2>Requisitos</h2>
+
+                <p>
+                    Antes de começar, instale os pacotes necessários:
+                </p>
+
+<pre><code>sudo pacman -S --needed git dkms base-devel linux-headers</code></pre>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Roger Ilan</p>
+
+        <p>
+            <a href="../contato.html">
+                Fale comigo
+            </a>
+        </p>
+
+        <p>
+            <a href="#topo">
+                Voltar ao topo
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
